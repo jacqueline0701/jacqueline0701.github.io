@@ -1,29 +1,416 @@
 <HTML>
 <HEAD>
 	<TITLE>Help Stop Marine Pollution</TITLE>
-<BODY>
+<STYLE type='text/css'>
 
-<STYLE>
+
+#image1{
+border: solid white 5px;
+position:absolute;
+left: 150px;
+top: 245px;
+height: 250px;
+z-index: 1;
+-webkit-transition:  top 2s ease, left 2s ease, height 2s ease;
+-moz-transition: top 2s ease, left 2s ease, height 2s ease;
+-o-transition: top 2s ease, left 2s ease, height 2s ease;
+transition: top 2s ease, left 2s ease, height 2s ease;
+
+}
+
+#image2{
+border: solid white 5px;
+position:absolute;
+left: 250px;
+top: 220px;
+height: 280px;
+z-index: 2;
+-webkit-transition:  top 2s ease, left 2s ease, height 2s ease;
+-moz-transition: top 2s ease, left 2s ease, height 2s ease;
+-o-transition: top 2s ease, left 2s ease, height 2s ease;
+transition: top 2s ease, left 2s ease, height 2s ease;
+}
+
+#image3{
+border: solid white 5px;
+position:absolute;
+left: 350px;
+top: 200px;
+height: 320px;
+z-index: 3;
+-webkit-transition:  top 2s ease, left 2s ease, height 2s ease;
+-moz-transition: top 2s ease, left 2s ease, height 2s ease;
+-o-transition: top 2s ease, left 2s ease, height 2s ease;
+transition: top 2s ease, left 2s ease, height 2s ease;
+}
+
+#image4{
+border: solid white 5px;
+position:absolute;
+left: 425px;
+top: 175px;
+height: 350px;
+z-index:4;
+-webkit-transition:  top 2s ease, left 2s ease, height 2s ease;
+-moz-transition: top 2s ease, left 2s ease, height 2s ease;
+-o-transition: top 2s ease, left 2s ease, height 2s ease;
+transition: top 2s ease, left 2s ease, height 2s ease;
+}
+
+#image5{
+border: solid white 5px;
+position:absolute;
+left: 550px;
+top: 200px;
+height: 320px;
+z-index:3;
+-webkit-transition:  top 2s ease, left 2s ease, height 2s ease;
+-moz-transition: top 2s ease, left 2s ease, height 2s ease;
+-o-transition: top 2s ease, left 2s ease, height 2s ease;
+transition: top 2s ease, left 2s ease, height 2s ease;
+
+}
+
+#image6{
+border: solid white 5px;
+position:absolute;
+left: 705px;
+top: 225px;
+height: 280px;
+z-index:2;
+-webkit-transition:  top 2s ease, left 2s ease, height 2s ease;
+-moz-transition: top 2s ease, left 2s ease, height 2s ease;
+-o-transition: top 2s ease, left 2s ease, height 2s ease;
+transition: top 2s ease, left 2s ease, height 2s ease;
+}
+
+#image7{
+border: solid white 5px;
+position:absolute;
+left: 850px;
+top: 245px;
+height: 250px;
+z-index:1;
+-webkit-transition:  top 2s ease, left 2s ease, height 2s ease;
+-moz-transition: top 2s ease, left 2s ease, height 2s ease;
+-o-transition: top 2s ease, left 2s ease, height 2s ease;
+transition: top 2s ease, left 2s ease, height 2s ease;
+}
+
+#left-arrow {
+		width: 0;
+		height: 0;
+		border-top: 50px solid transparent;
+		border-right: 100px solid #00FA9A;
+		border-bottom: 50px solid transparent;
+		transform: scale(0.2);
+		position: absolute;
+		top: 55%;
+		left: 20%;
+		z-index: 20;
+		
+	}
+
+	
+#left-arrow:hover{
+		border-right: 100px solid #FA8072;
+	}
+#right-arrow {
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-top: 50px solid transparent;
+		border-left: 100px solid #00FA9A;
+		border-bottom: 50px solid transparent;
+		transform: scale(0.2);
+		top: 55%;
+		right: 15%;
+		z-index: 20;
+		-webkit-transition:  top 2s ease, opacity 2s ease;
+		-moz-transition: top 2s ease, opacity 2s ease;
+		-o-transition: top 2s ease, opacity 2s ease;
+		transition: top 2s ease, opacity 2s ease;
+
+	}
+#right-arrow:hover{
+		border-left: 100px solid #FA8072;
+	}
+
+#pagetitle{
+position: relative;
+left:15px;
+top:760px;
+z-index:2;
+font-size: 70px;
+}
+
+#Oil{
+border: solid white 5px;
+position: absolute;
+left:-10px;
+top: 0px;
+width:100%;
+z-index:1;
+}
+#rectangle {
+position: absolute;
+left: 1px;
+top: 1100px;
+width: 1425px;
+height: 50px;
+background: white;
+z-index:3;
+opacity: 0.6;
+}
+
+#LearnMore{
+position: absolute;
+left: 665px;
+top: 1080px;
+width: 100px;
+height: 50px;
+color: red;
+z-index:4;
+}
+#LearnMore:hover{
+color: white;
+}
+
+
+#savemarinelife{
+position: absolute;
+left:22px;
+top:15px;
+z-index:3;
+font-size: 22px;
+}
+
+#square {
+position: absolute;
+left: 1px;
+top: 0px;
+width: 100%;
+height: 75px;
+background: white;
+z-index:2;
+opacity: 0.6;
+}
+
+#square2 {
+position: absolute;
+left: 7px;
+top: 15px;
+width: 250px;
+height: 50px;
+background: #1ABC9C;
+z-index:2;
+opacity: 0.6;
+border: solid white;
+}
+
+#square3 {
+position: absolute;
+left: 1220px;
+top: 15px;
+width: 50px;
+height: 50px;
+background: #F30C0C;
+z-index:2;
+opacity: 0.6;
+border: solid white;
+}
+
+#square4 {
+position: absolute;
+left: 1150px;
+top: 15px;
+width: 50px;
+height: 50px;
+background: #8a3ab9;
+z-index:2;
+opacity: 0.6;
+border: solid white;
+}
+
+#square5 {
+position: absolute;
+left: 1075px;
+top: 15px;
+width: 50px;
+height: 50px;
+background: #8B0000;
+z-index:2;
+opacity: 0.6;
+border: solid white;
+}
+
+#square6 {
+position: absolute;
+left: 1000px;
+top: 15px;
+width: 50px;
+height: 50px;
+background: #05C1F8;
+z-index:2;
+opacity: 0.6;
+border: solid white;
+}
+
+#square7 {
+position: absolute;
+left: 925px;
+top: 15px;
+width: 50px;
+height: 50px;
+background: #133989;
+z-index:2;
+opacity: 0.6;
+border: solid white;
+}
+
+#fb{
+	position: absolute;
+	right: 23.9%;
+	height: 7%;
+	z-index: 3;
+	top: 3.5%;
+}
+
+#twt{
+	position: absolute;
+	right: 18.15%;
+	height: 7%;
+	z-index: 3;
+	top: 3.5%;
+}
+
+#pin{
+	position: absolute;
+	right: 12.2%;
+	height: 7%;
+	z-index: 3;
+	top: 3.5%;
+}
+
+#ig{
+	position: absolute;
+	right: 6.25%;
+	height: 7%;
+	z-index: 3;
+	top: 3.5%;
+}
+
+#tube{
+	position: absolute;
+	right: 0.8%;
+	height: 5%;
+	z-index: 3;
+	top: 4.5%;
+}
+nav{
+	position: absolute;
+	z-index: 80;
+	top: 540px;
+	left: -5%;
+
+}
+
+	nav ul ul {
+display: none;
+}
+
+/*specifies that the dropdown will display as 200 px wide blocks */
+nav ul li:hover > ul {
+display: block;
+width: 250px;
+}
+
+/* original look of the menu before mouseover. Also need to specify that it will have a table shape. Border radius controls how round the corners are. */
+nav ul {
+background: #0579FA; 
+box-shadow: 0px 0px 9px rgba(0,0,0,0.8);
+padding: 0 100px;
+padding-top: 0px;
+border-radius: 0px; 
+list-style: none;
+position: relative;
+display: inline-table;
+width: 96%;
+}
+
+/*This sets the width, color, alignment of the text for the dropdown items */
+nav ul li {
+float: left;
+width: 250px;
+text-align: center;
+color: #FF001B;
+}
+
+/*THIS IS WHERE YOU CAN SET THE COLOR FOR THE MAIN MENU ITEM WHEN YOU GO OVER IT */
+nav ul li:hover {
+background: linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#000000 40%);
+}
+
+/* color for the link in the menu*/
+nav ul li:hover a {
+color: #fff;
+}
+
+nav ul li a {
+display: block; padding: 25px 40px;
+
+}
+
+nav ul ul {
+background: #5f6975; border-radius: 0px; padding: 0px;
+position: absolute; top: 100%; 
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000;
+position: relative;
+padding: 0px 0px; 
+text-align: center;
+}
+
+nav ul ul li a {
+padding: 0px 0px;
+color: #fff;
+} 
+
+/*background color when you go over the links can also change color of text here if you want */
+nav ul ul li a:hover {
+background: #000000;
+background: linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#000000 40%);
+}
+
 #savethemarinelife{
 position:absolute;
 left:335px;
-top:225px;
+top:675px;
 z-index:3;
 font-size:72px;
 }
 
 #LearnMore{
 position:absolute;
-left:580px;
-top:415px;
+left:625px;
+top:900px;
 z-index:4;
 font-size:23px;
 }
 
+
 #rectangle{
 position: absolute;
 left: 1px;
-top: 150px;
+top: 200px;
 width: 100%;
 height: 460px;
 background: white;
@@ -33,8 +420,8 @@ opacity: 0.6;
 
 #rectangle2 {
 position: absolute;
-left: 555px;
-top: 400px;
+left: 569px;
+top: 898px;
 width: 12%;
 height: 50px;
 background: white;
@@ -45,29 +432,17 @@ opacity: 1;
 #oil{
 position: absolute;
 left: 1px;
-top: 150px;
+top: 600px;
 width: 100%;
 height: 460px;
-z-index: 2;
+z-index: -2;
 }
-
-</STYLE>
-<BODY bgcolor=grey>
-<FONT color='FC9106' face='orange juice'>
-<H1 id='savethemarinelife'> Save The Marine Life </H1>
-<FONT color='#76D7C4' face='orange juice'>
-<A href='Learn%20More.html' id='LearnMore' onmouseover="document.getElementById('triangle-right').style.borderLeft='25px solid white'" onmouseout="document.getElementById('triangle-right').style.borderLeft='25px solid darkblue'"> Learn More</A>
-</FONT>
-<DIV id='rectangle'> </DIV>
-<DIV id='rectangle2'> </DIV>
-<IMG src='oil-spill.jpg' id=oil></IMG>
-<STYLE>
 
 #RECTANGLE {
 position: absolute;
 left: 1px;
-top: 1000px;
-width: 100%;
+top: 1070px;
+width: 100.8%;
 height: 50px;
 background: black;
 z-index:3;
@@ -76,12 +451,640 @@ opacity: 1;
 #quote {
 position: absolute;
 left: 125px;
-top: 995px;
+top: 1065px;
 background: black;
 z-index:4;
 opacity: 1;
 
 }
+
+
+</STYLE>
+</HEAD>
+<BODY bgcolor='grey'>
+<script src="jquery.js"></script>
+	<SCRIPT>
+		var selected=0;
+		$(function() {
+			$("#right-arrow").click(function() {
+				
+				if(selected==0){
+
+
+					document.getElementById('image4').style.left='550';
+					document.getElementById('image4').style.top='200';
+					document.getElementById('image4').style.height='320';
+					document.getElementById('image4').style.zIndex='3';
+
+					document.getElementById('image5').style.left='705';
+					document.getElementById('image5').style.top='225';
+					document.getElementById('image5').style.height='280';
+					document.getElementById('image5').style.zIndex='2';
+
+					document.getElementById('image6').style.left='850';
+					document.getElementById('image6').style.top='245';
+					document.getElementById('image6').style.height='250';
+					document.getElementById('image6').style.zIndex='1';
+
+					document.getElementById('image7').style.left='150';
+					document.getElementById('image7').style.top='245';
+					document.getElementById('image7').style.height='250';
+					document.getElementById('image7').style.zIndex='0';
+
+					document.getElementById('image1').style.left='250';
+					document.getElementById('image1').style.top='220';
+					document.getElementById('image1').style.height='280';
+					document.getElementById('image1').style.zIndex='2';
+
+					document.getElementById('image2').style.left='350';
+					document.getElementById('image2').style.top='200';
+					document.getElementById('image2').style.height='320';
+					document.getElementById('image2').style.zIndex='3';
+
+					document.getElementById('image3').style.left='425';
+					document.getElementById('image3').style.top='175';
+					document.getElementById('image3').style.height='350';
+					document.getElementById('image3').style.zIndex='4';
+			}
+			else if (selected==1)
+			{
+					document.getElementById('image3').style.left='550';
+					document.getElementById('image3').style.top='200';
+					document.getElementById('image3').style.height='320';
+					document.getElementById('image3').style.zIndex='3';
+
+					document.getElementById('image4').style.left='705';
+					document.getElementById('image4').style.top='225';
+					document.getElementById('image4').style.height='280';
+					document.getElementById('image4').style.zIndex='2';
+
+					document.getElementById('image5').style.left='850';
+					document.getElementById('image5').style.top='245';
+					document.getElementById('image5').style.height='250';
+					document.getElementById('image5').style.zIndex='1';
+
+					document.getElementById('image6').style.left='150';
+					document.getElementById('image6').style.top='245';
+					document.getElementById('image6').style.height='250';
+					document.getElementById('image6').style.zIndex='0';
+
+					document.getElementById('image7').style.left='250';
+					document.getElementById('image7').style.top='220';
+					document.getElementById('image7').style.height='280';
+					document.getElementById('image7').style.zIndex='2';
+
+					document.getElementById('image1').style.left='350';
+					document.getElementById('image1').style.top='200';
+					document.getElementById('image1').style.height='320';
+					document.getElementById('image1').style.zIndex='3';
+
+					document.getElementById('image2').style.left='425';
+					document.getElementById('image2').style.top='175';
+					document.getElementById('image2').style.height='350';
+					document.getElementById('image2').style.zIndex='4';
+			}
+			else if (selected==2)
+			{
+			
+					document.getElementById('image2').style.left='550';
+					document.getElementById('image2').style.top='200';
+					document.getElementById('image2').style.height='320';
+					document.getElementById('image2').style.zIndex='3';
+
+					document.getElementById('image3').style.left='705';
+					document.getElementById('image3').style.top='225';
+					document.getElementById('image3').style.height='280';
+					document.getElementById('image3').style.zIndex='2';
+
+					document.getElementById('image4').style.left='850';
+					document.getElementById('image4').style.top='245';
+					document.getElementById('image4').style.height='250';
+					document.getElementById('image4').style.zIndex='1';
+
+					document.getElementById('image5').style.left='150';
+					document.getElementById('image5').style.top='245';
+					document.getElementById('image5').style.height='250';
+					document.getElementById('image5').style.zIndex='0';
+
+					document.getElementById('image6').style.left='250';
+					document.getElementById('image6').style.top='220';
+					document.getElementById('image6').style.height='280';
+					document.getElementById('image6').style.zIndex='2';
+
+					document.getElementById('image7').style.left='350';
+					document.getElementById('image7').style.top='200';
+					document.getElementById('image7').style.height='320';
+					document.getElementById('image7').style.zIndex='3';
+
+					document.getElementById('image1').style.left='425';
+					document.getElementById('image1').style.top='175';
+					document.getElementById('image1').style.height='350';
+					document.getElementById('image1').style.zIndex='4';
+			}
+			else if (selected==3)
+			{
+			
+					document.getElementById('image1').style.left='550';
+					document.getElementById('image1').style.top='200';
+					document.getElementById('image1').style.height='320';
+					document.getElementById('image1').style.zIndex='3';
+
+					document.getElementById('image2').style.left='705';
+					document.getElementById('image2').style.top='225';
+					document.getElementById('image2').style.height='280';
+					document.getElementById('image2').style.zIndex='2';
+
+					document.getElementById('image3').style.left='850';
+					document.getElementById('image3').style.top='245';
+					document.getElementById('image3').style.height='250';
+					document.getElementById('image3').style.zIndex='1';
+
+					document.getElementById('image4').style.left='150';
+					document.getElementById('image4').style.top='245';
+					document.getElementById('image4').style.height='250';
+					document.getElementById('image4').style.zIndex='0';
+
+					document.getElementById('image5').style.left='250';
+					document.getElementById('image5').style.top='220';
+					document.getElementById('image5').style.height='280';
+					document.getElementById('image5').style.zIndex='2';
+
+					document.getElementById('image6').style.left='350';
+					document.getElementById('image6').style.top='200';
+					document.getElementById('image6').style.height='320';
+					document.getElementById('image6').style.zIndex='3';
+
+					document.getElementById('image7').style.left='425';
+					document.getElementById('image7').style.top='175';
+					document.getElementById('image7').style.height='350';
+					document.getElementById('image7').style.zIndex='4';
+			}
+			else if (selected==4)
+			{
+			
+					document.getElementById('image7').style.left='550';
+					document.getElementById('image7').style.top='200';
+					document.getElementById('image7').style.height='320';
+					document.getElementById('image7').style.zIndex='3';
+
+					document.getElementById('image1').style.left='705';
+					document.getElementById('image1').style.top='225';
+					document.getElementById('image1').style.height='280';
+					document.getElementById('image1').style.zIndex='2';
+
+					document.getElementById('image2').style.left='850';
+					document.getElementById('image2').style.top='245';
+					document.getElementById('image2').style.height='250';
+					document.getElementById('image2').style.zIndex='1';
+
+					document.getElementById('image3').style.left='150';
+					document.getElementById('image3').style.top='245';
+					document.getElementById('image3').style.height='250';
+					document.getElementById('image3').style.zIndex='0';
+
+					document.getElementById('image4').style.left='250';
+					document.getElementById('image4').style.top='220';
+					document.getElementById('image4').style.height='280';
+					document.getElementById('image4').style.zIndex='2';
+
+					document.getElementById('image5').style.left='350';
+					document.getElementById('image5').style.top='200';
+					document.getElementById('image5').style.height='320';
+					document.getElementById('image5').style.zIndex='3';
+
+					document.getElementById('image6').style.left='425';
+					document.getElementById('image6').style.top='175';
+					document.getElementById('image6').style.height='350';
+					document.getElementById('image6').style.zIndex='4';
+			}
+			else if (selected==5)
+			{
+			
+					document.getElementById('image6').style.left='550';
+					document.getElementById('image6').style.top='200';
+					document.getElementById('image6').style.height='320';
+					document.getElementById('image6').style.zIndex='3';
+
+					document.getElementById('image7').style.left='705';
+					document.getElementById('image7').style.top='225';
+					document.getElementById('image7').style.height='280';
+					document.getElementById('image7').style.zIndex='2';
+
+					document.getElementById('image1').style.left='850';
+					document.getElementById('image1').style.top='245';
+					document.getElementById('image1').style.height='250';
+					document.getElementById('image1').style.zIndex='1';
+
+					document.getElementById('image2').style.left='150';
+					document.getElementById('image2').style.top='245';
+					document.getElementById('image2').style.height='250';
+					document.getElementById('image2').style.zIndex='0';
+
+					document.getElementById('image3').style.left='250';
+					document.getElementById('image3').style.top='220';
+					document.getElementById('image3').style.height='280';
+					document.getElementById('image3').style.zIndex='2';
+
+					document.getElementById('image4').style.left='350';
+					document.getElementById('image4').style.top='200';
+					document.getElementById('image4').style.height='320';
+					document.getElementById('image4').style.zIndex='3';
+
+					document.getElementById('image5').style.left='425';
+					document.getElementById('image5').style.top='175';
+					document.getElementById('image5').style.height='350';
+					document.getElementById('image5').style.zIndex='4';
+			}
+			else if (selected==6)
+			{
+			
+					document.getElementById('image5').style.left='550';
+					document.getElementById('image5').style.top='200';
+					document.getElementById('image5').style.height='320';
+					document.getElementById('image5').style.zIndex='3';
+
+					document.getElementById('image6').style.left='705';
+					document.getElementById('image6').style.top='225';
+					document.getElementById('image6').style.height='280';
+					document.getElementById('image6').style.zIndex='2';
+
+					document.getElementById('image7').style.left='850';
+					document.getElementById('image7').style.top='245';
+					document.getElementById('image7').style.height='250';
+					document.getElementById('image7').style.zIndex='1';
+
+					document.getElementById('image1').style.left='150';
+					document.getElementById('image1').style.top='245';
+					document.getElementById('image1').style.height='250';
+					document.getElementById('image1').style.zIndex='0';
+
+					document.getElementById('image2').style.left='250';
+					document.getElementById('image2').style.top='220';
+					document.getElementById('image2').style.height='280';
+					document.getElementById('image2').style.zIndex='2';
+
+					document.getElementById('image3').style.left='350';
+					document.getElementById('image3').style.top='200';
+					document.getElementById('image3').style.height='320';
+					document.getElementById('image3').style.zIndex='3';
+
+					document.getElementById('image4').style.left='425';
+					document.getElementById('image4').style.top='175';
+					document.getElementById('image4').style.height='350';
+					document.getElementById('image4').style.zIndex='4';
+			}
+			selected=(selected+1)%7;
+		})});
+		$(function() {
+			$("#left-arrow").click(function() {
+				if(selected==0){
+
+
+					document.getElementById('image6').style.left='550';
+					document.getElementById('image6').style.top='200';
+					document.getElementById('image6').style.height='320';
+					document.getElementById('image6').style.zIndex='3';
+
+					document.getElementById('image7').style.left='705';
+					document.getElementById('image7').style.top='225';
+					document.getElementById('image7').style.height='280';
+					document.getElementById('image7').style.zIndex='2';
+
+					document.getElementById('image1').style.left='850';
+					document.getElementById('image1').style.top='245';
+					document.getElementById('image1').style.height='250';
+					document.getElementById('image1').style.zIndex='1';
+
+					document.getElementById('image2').style.left='150';
+					document.getElementById('image2').style.top='245';
+					document.getElementById('image2').style.height='250';
+					document.getElementById('image2').style.zIndex='0';
+
+					document.getElementById('image3').style.left='250';
+					document.getElementById('image3').style.top='220';
+					document.getElementById('image3').style.height='280';
+					document.getElementById('image3').style.zIndex='2';
+
+					document.getElementById('image4').style.left='350';
+					document.getElementById('image4').style.top='200';
+					document.getElementById('image4').style.height='320';
+					document.getElementById('image4').style.zIndex='3';
+
+					document.getElementById('image5').style.left='425';
+					document.getElementById('image5').style.top='175';
+					document.getElementById('image5').style.height='350';
+					document.getElementById('image5').style.zIndex='4';
+			}
+			else if (selected==1)
+			{
+					document.getElementById('image5').style.left='550';
+					document.getElementById('image5').style.top='200';
+					document.getElementById('image5').style.height='320';
+					document.getElementById('image5').style.zIndex='3';
+
+					document.getElementById('image6').style.left='705';
+					document.getElementById('image6').style.top='225';
+					document.getElementById('image6').style.height='280';
+					document.getElementById('image6').style.zIndex='2';
+
+					document.getElementById('image7').style.left='850';
+					document.getElementById('image7').style.top='245';
+					document.getElementById('image7').style.height='250';
+					document.getElementById('image7').style.zIndex='1';
+
+					document.getElementById('image1').style.left='150';
+					document.getElementById('image1').style.top='245';
+					document.getElementById('image1').style.height='250';
+					document.getElementById('image1').style.zIndex='0';
+
+					document.getElementById('image2').style.left='250';
+					document.getElementById('image2').style.top='220';
+					document.getElementById('image2').style.height='280';
+					document.getElementById('image2').style.zIndex='2';
+
+					document.getElementById('image3').style.left='350';
+					document.getElementById('image3').style.top='200';
+					document.getElementById('image3').style.height='320';
+					document.getElementById('image3').style.zIndex='3';
+
+					document.getElementById('image4').style.left='425';
+					document.getElementById('image4').style.top='175';
+					document.getElementById('image4').style.height='350';
+					document.getElementById('image4').style.zIndex='4';
+			}
+			else if (selected==2)
+			{
+			
+					document.getElementById('image4').style.left='550';
+					document.getElementById('image4').style.top='200';
+					document.getElementById('image4').style.height='320';
+					document.getElementById('image4').style.zIndex='3';
+
+					document.getElementById('image5').style.left='705';
+					document.getElementById('image5').style.top='225';
+					document.getElementById('image5').style.height='280';
+					document.getElementById('image5').style.zIndex='2';
+
+					document.getElementById('image6').style.left='850';
+					document.getElementById('image6').style.top='245';
+					document.getElementById('image6').style.height='250';
+					document.getElementById('image6').style.zIndex='1';
+
+					document.getElementById('image7').style.left='150';
+					document.getElementById('image7').style.top='245';
+					document.getElementById('image7').style.height='250';
+					document.getElementById('image7').style.zIndex='0';
+
+					document.getElementById('image1').style.left='250';
+					document.getElementById('image1').style.top='220';
+					document.getElementById('image1').style.height='280';
+					document.getElementById('image1').style.zIndex='2';
+
+					document.getElementById('image2').style.left='350';
+					document.getElementById('image2').style.top='200';
+					document.getElementById('image2').style.height='320';
+					document.getElementById('image2').style.zIndex='3';
+
+					document.getElementById('image3').style.left='425';
+					document.getElementById('image3').style.top='175';
+					document.getElementById('image3').style.height='350';
+					document.getElementById('image3').style.zIndex='4';
+			}
+			else if (selected==3)
+			{
+			
+					document.getElementById('image3').style.left='550';
+					document.getElementById('image3').style.top='200';
+					document.getElementById('image3').style.height='320';
+					document.getElementById('image3').style.zIndex='3';
+
+					document.getElementById('image4').style.left='705';
+					document.getElementById('image4').style.top='225';
+					document.getElementById('image4').style.height='280';
+					document.getElementById('image4').style.zIndex='2';
+
+					document.getElementById('image5').style.left='850';
+					document.getElementById('image5').style.top='245';
+					document.getElementById('image5').style.height='250';
+					document.getElementById('image5').style.zIndex='1';
+
+					document.getElementById('image6').style.left='150';
+					document.getElementById('image6').style.top='245';
+					document.getElementById('image6').style.height='250';
+					document.getElementById('image6').style.zIndex='0';
+
+					document.getElementById('image7').style.left='250';
+					document.getElementById('image7').style.top='220';
+					document.getElementById('image7').style.height='280';
+					document.getElementById('image7').style.zIndex='2';
+
+					document.getElementById('image1').style.left='350';
+					document.getElementById('image1').style.top='200';
+					document.getElementById('image1').style.height='320';
+					document.getElementById('image1').style.zIndex='3';
+
+					document.getElementById('image2').style.left='425';
+					document.getElementById('image2').style.top='175';
+					document.getElementById('image2').style.height='350';
+					document.getElementById('image2').style.zIndex='4';
+			}
+			else if (selected==4)
+			{
+			
+					document.getElementById('image2').style.left='550';
+					document.getElementById('image2').style.top='200';
+					document.getElementById('image2').style.height='320';
+					document.getElementById('image2').style.zIndex='3';
+
+					document.getElementById('image3').style.left='705';
+					document.getElementById('image3').style.top='225';
+					document.getElementById('image3').style.height='280';
+					document.getElementById('image3').style.zIndex='2';
+
+					document.getElementById('image4').style.left='850';
+					document.getElementById('image4').style.top='245';
+					document.getElementById('image4').style.height='250';
+					document.getElementById('image4').style.zIndex='1';
+
+					document.getElementById('image5').style.left='150';
+					document.getElementById('image5').style.top='245';
+					document.getElementById('image5').style.height='250';
+					document.getElementById('image5').style.zIndex='0';
+
+					document.getElementById('image6').style.left='250';
+					document.getElementById('image6').style.top='220';
+					document.getElementById('image6').style.height='280';
+					document.getElementById('image6').style.zIndex='2';
+
+					document.getElementById('image7').style.left='350';
+					document.getElementById('image7').style.top='200';
+					document.getElementById('image7').style.height='320';
+					document.getElementById('image7').style.zIndex='3';
+
+					document.getElementById('image1').style.left='425';
+					document.getElementById('image1').style.top='175';
+					document.getElementById('image1').style.height='350';
+					document.getElementById('image1').style.zIndex='4';
+			}
+			else if (selected==5)
+			{
+			
+					document.getElementById('image1').style.left='550';
+					document.getElementById('image1').style.top='200';
+					document.getElementById('image1').style.height='320';
+					document.getElementById('image1').style.zIndex='3';
+
+					document.getElementById('image2').style.left='705';
+					document.getElementById('image2').style.top='225';
+					document.getElementById('image2').style.height='280';
+					document.getElementById('image2').style.zIndex='2';
+
+					document.getElementById('image3').style.left='850';
+					document.getElementById('image3').style.top='245';
+					document.getElementById('image3').style.height='250';
+					document.getElementById('image3').style.zIndex='1';
+
+					document.getElementById('image4').style.left='150';
+					document.getElementById('image4').style.top='245';
+					document.getElementById('image4').style.height='250';
+					document.getElementById('image4').style.zIndex='0';
+
+					document.getElementById('image5').style.left='250';
+					document.getElementById('image5').style.top='220';
+					document.getElementById('image5').style.height='280';
+					document.getElementById('image5').style.zIndex='2';
+
+					document.getElementById('image6').style.left='350';
+					document.getElementById('image6').style.top='200';
+					document.getElementById('image6').style.height='320';
+					document.getElementById('image6').style.zIndex='3';
+
+					document.getElementById('image7').style.left='425';
+					document.getElementById('image7').style.top='175';
+					document.getElementById('image7').style.height='350';
+					document.getElementById('image7').style.zIndex='4';
+			}
+			else if (selected==6)
+			{
+			
+					document.getElementById('image7').style.left='550';
+					document.getElementById('image7').style.top='200';
+					document.getElementById('image7').style.height='320';
+					document.getElementById('image7').style.zIndex='3';
+
+					document.getElementById('image1').style.left='705';
+					document.getElementById('image1').style.top='225';
+					document.getElementById('image1').style.height='280';
+					document.getElementById('image1').style.zIndex='2';
+
+					document.getElementById('image2').style.left='850';
+					document.getElementById('image2').style.top='245';
+					document.getElementById('image2').style.height='250';
+					document.getElementById('image2').style.zIndex='1';
+
+					document.getElementById('image3').style.left='150';
+					document.getElementById('image3').style.top='245';
+					document.getElementById('image3').style.height='250';
+					document.getElementById('image3').style.zIndex='0';
+
+					document.getElementById('image4').style.left='250';
+					document.getElementById('image4').style.top='220';
+					document.getElementById('image4').style.height='280';
+					document.getElementById('image4').style.zIndex='2';
+
+					document.getElementById('image5').style.left='350';
+					document.getElementById('image5').style.top='200';
+					document.getElementById('image5').style.height='320';
+					document.getElementById('image5').style.zIndex='3';
+
+					document.getElementById('image6').style.left='425';
+					document.getElementById('image6').style.top='175';
+					document.getElementById('image6').style.height='350';
+					document.getElementById('image6').style.zIndex='4';
+			}
+			selected=(selected-1)%7;
+			if(selected==-1)
+			{
+				selected=6;
+			}
+			;
+		})});
+
+	 </SCRIPT>
+
+<FONT color='FC9106' face='orange juice'>
+<H1 id='savemarinelife'> Help Stop Marine Pollution </H1>
+</FONT>
+
+
+<DIV id='square'> </DIV>
+<DIV id='square2'> </DIV> 
+<DIV id='square3'> </DIV>
+<DIV id='square4'> </DIV>
+<DIV id='square5'> </DIV>
+<DIV id='square6'> </DIV>
+<DIV id='square7'> </DIV>
+<A href='https://www.facebook.com/profile.php?id=100017696826875'><IMG src='facebook.png' id=fb></IMG></A>
+<A href='https://twitter.com/jacqueline_0701'><IMG src='twitter.png' id=twt></IMG>
+<A href='https://www.pinterest.com/jacmiranda2369/'><IMG src='pinterest.png' id=pin></IMG></A>
+<A href='https://www.instagram.com/jacqueline_miranda_marine/'><IMG src='instagram.png' id=ig></IMG></A>
+<A href='https://www.youtube.com/channel/UCv3Guq7stAhUq1jJMsWFUeg'><IMG src='youtube.png' id=tube></IMG></A>
+<DIV id='rectangletop'> </DIV>
+
+<NAV>
+<UL>
+	<LI> Marine Pollution
+		<UL>
+			<LI><A href='Pesticides.html'>Pesticides</A></LI>
+			<LI><A href='Oil%20Spills.html'>Oil</A></LI>
+			</UL>
+			</LI> 
+		<LI> Marine Animals
+			<UL>
+			<LI><A href='How%20Marine%20Pollution%20Affects%20Animals.html'>Animals</A></LI>
+			</UL>
+			</LI> 
+			</LI>
+	<LI> How We Can Help
+		<UL>
+			<LI><A href='How%20We%20Can%20Help.html'>How we can help the ocean</A></LI>
+		<LI><A href='http://saveourshores.org/what-we-do/pollution-prevention/'> How we can help prevent marine pollution</A></LI>
+		</UL>
+		</LI> 
+		</LI>
+	<LI> Why Save the Ocean
+		<UL>
+			<LI><A href='Effects%20on%20Human.html'>Effects on Humans</A></LI>
+			<LI><A href='Effects%20on%20Marine%20Life.html'>Effects on Marine Life</A></LI>
+			<LI><A href='How%20Marine%20Pollution%20Affects%20Humans.html'> Marine Pollution and Humans
+			<LI><A href='http://ocean.nationalgeographic.com/ocean/take-action/10-things-you-can-do-to-save-the-ocean/'>Save the Ocean!</A></LI>
+			<LI><A href='https://marine-conservation.org/what-we-do/advocate/why-we-protect-our-oceans/'> Why should we save the ocean? </A></LI>
+		</UL>
+	</LI> 
+</UL>
+</NAV>
+
+<FONT color='FC9106' face='orange juice'>
+<H1 id='savethemarinelife'> Save The Marine Life </H1>
+<FONT color='#76D7C4' face='orange juice'>
+<A href='Learn%20More.html' id='LearnMore' onmouseover="document.getElementById('triangle-right').style.borderLeft='25px solid white'" onmouseout="document.getElementById('triangle-right').style.borderLeft='25px solid darkblue'"> Learn More</A>
+</FONT>
+<DIV id='right-arrow'></DIV>
+<IMG src='Garbage 1.jpg' id='image1'> </IMG>
+<IMG src='Garbage 2.jpg' id='image2'> </IMG>
+<IMG src='Garbage 3.jpg' id='image3'> </IMG>
+<IMG src='Garbage 4.jpg' id='image4'> </IMG>
+<IMG src='Garbage 5.jpg' id='image5'> </IMG>
+<IMG src='Garbage 6.jpg' id='image6'> </IMG>
+<IMG src='Garbage 7.jpg' id='image7'> </IMG>
+<DIV id='left-arrow'></DIV>
+<DIV id='rectangle'> </DIV>
+<DIV id='rectangle2'> </DIV>
+<IMG src='oil-spill.jpg' id=oil></IMG>
+
+<STYLE>
+
+
 </STYLE>
 </HEAD>
 <FONT color='white' face='Courier New'>
@@ -89,7 +1092,5 @@ opacity: 1;
 <DIV id='rectangle'> </DIV>
 <STYLE type='text/css'>
 </STYLE>
-
-
 
 
