@@ -1,0 +1,118 @@
+<HTML>
+<HEAD>
+<TITLE> Marine Pollution Dropdown Menu </TITLE>
+</HEAD>
+<BODY bgcolor='grey'>
+<STYLE type="text/css">
+nav ul ul {
+display: none;
+}
+
+/*specifies that the dropdown will display as 200 px wide blocks */
+nav ul li:hover > ul {
+display: block;
+width: 200px;
+}
+
+/* original look of the menu before mouseover. Also need to specify that it will have a table shape. Border radius controls how round the corners are. */
+nav ul {
+background: #0579FA; 
+box-shadow: 0px 0px 9px rgba(0,0,0,0.8);
+padding: 0 100px;
+padding-top: 0px;
+border-radius: 0px; 
+list-style: none;
+position: relative;
+display: inline-table;
+}
+
+/*This sets the width, color, alignment of the text for the dropdown items */
+nav ul li {
+float: left;
+width: 200px;
+text-align: center;
+color: #FF001B;
+}
+
+/*THIS IS WHERE YOU CAN SET THE COLOR FOR THE MAIN MENU ITEM WHEN YOU GO OVER IT */
+nav ul li:hover {
+background: linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#000000 40%);
+}
+
+/* color for the link in the menu*/
+nav ul li:hover a {
+color: #fff;
+}
+
+nav ul li a {
+display: block; padding: 25px 40px;
+
+}
+
+nav ul ul {
+background: #5f6975; border-radius: 0px; padding: 0px;
+position: absolute; top: 100%; 
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000;
+position: relative;
+padding: 0px 0px; 
+text-align: center;
+}
+
+nav ul ul li a {
+padding: 0px 0px;
+color: #fff;
+} 
+
+/*background color when you go over the links can also change color of text here if you want */
+nav ul ul li a:hover {
+background: #000000;
+background: linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#000000 40%);
+}
+</STYLE>
+</HEAD>
+<BODY>
+<NAV>
+<UL>
+	<LI> Marine Pollution
+		<UL>
+			<LI><A href='Pesticides.html'>Pesticides</A></LI>
+			<LI><A href='Oil%20Spills.html'>Oil</A></LI>
+			</UL>
+			</LI> 
+		<LI> Marine Animals
+			<UL>
+			<LI><A href='How%20Marine%20Pollution%20Affects%20Animals.html'>Animals</A></LI>
+			</UL>
+			</LI> 
+			</LI>
+	<LI> How We Can Help
+		<UL>
+			<LI><A href='How%20We%20Can%20Help.html'>How we can help the ocean</A></LI>
+		<LI><A href='http://saveourshores.org/what-we-do/pollution-prevention/'> How we can help prevent marine pollution</A></LI>
+		</UL>
+		</LI> 
+		</LI>
+	<LI> Why Save the Ocean
+		<UL>
+			<LI><A href='Effects%20on%20Human.html'>Effects on Humans</A></LI>
+			<LI><A href='Effects%20on%20Marine%20Life.html'>Effects on Marine Life</A></LI>
+			<LI><A href='How%20Marine%20Pollution%20Affects%20Humans.html'> Marine Pollution and Humans
+			<LI><A href='http://ocean.nationalgeographic.com/ocean/take-action/10-things-you-can-do-to-save-the-ocean/'>Save the Ocean!</A></LI>
+			<LI><A href='https://marine-conservation.org/what-we-do/advocate/why-we-protect-our-oceans/'> Why should we save the ocean? </A></LI>
+		</UL>
+	</LI> 
+</UL>
+</NAV>
+</BODY>
+</HTML>
+
+
